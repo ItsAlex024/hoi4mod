@@ -1,0 +1,35 @@
+﻿focus_tree = {
+    id = gre_focus_tree
+    country = {
+        base = 0
+        modifier = {
+            add = 10
+            tag = GRE
+        }
+    }
+    focus = {
+        id = greek_elections_one
+		x = 15
+		y = 3.5
+
+
+		cost= 2
+
+        completion_reward = {
+            add_political_power = 15
+            }
+    }
+    focus = {
+        id = greek_housearest
+		x = 15
+		y = 6
+
+
+		cost= 2
+        prerequisite = { focus = greek_elections_one }
+
+        completion_reward = {
+            add_political_power = 100
+            }
+    }
+}
